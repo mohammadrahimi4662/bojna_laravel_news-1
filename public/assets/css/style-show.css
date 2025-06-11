@@ -1,0 +1,288 @@
+/* start image top news */
+.feedback-box {
+    /* background-color: #fff; */
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+    overflow: hidden;
+    transition: all 0.3s ease;
+    /* padding: 0; حذف padding از خود باکس */
+    /* padding: 0rem !important; */
+}
+.feedback-box .tag-item {
+    margin: 5px;
+}
+.feedback-image-wrapper {
+    width: 100%;
+    height: auto; /* یا هر ارتفاع دلخواه */
+    overflow: hidden;
+}
+
+.feedback-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* بقیه محتوا padding داشته باشه */
+.feedback-box > *:not(.feedback-image-wrapper) {
+    /* padding-top: 1rem; */
+}
+
+.feedback-box-link{
+    padding: 10px;
+}
+
+.news-title{
+        font-family: IRANSans;
+        font-size: 28px;
+}
+
+.news-subtitle{
+        background-color: #e9ecef;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: IRANSans;
+}
+
+/* end image top news */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.justify-text,
+.justify-text > * {
+    text-align: justify !important;
+    line-height: 1.6 !important;
+    padding: 0 5px;
+}
+
+
+.tag-item {
+    display: inline-block;
+    background-color: #e0f0ff;
+    color: #0366d6;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0 5px 5px 0;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+
+
+/* styles start */
+@media (max-width: 767.98px) {
+    .custom-responsive-row {
+      display: block !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .custom-responsive-row > [class^="col-"] {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .custom-responsive-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+    }
+
+    .custom-responsive-row > [class^="col-"] {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+/* styles end */
+
+
+
+/* start dark mode page next project */
+
+ /* [data-bs-theme="dark"] .feedback-box,
+ [data-bs-theme="dark"] .box-container,
+ [data-bs-theme="dark"] .news-card{
+  background: #32363a !important;
+  color: #fff !important;
+} */
+
+
+/* start body category show dark mode */
+[data-bs-theme="dark"] body {
+    background-color: #1f2125;
+    color: #f1f1f1;
+}
+
+[data-bs-theme="dark"] .feedback-box,
+[data-bs-theme="dark"] .box-container,
+[data-bs-theme="dark"] .news-card,
+[data-bs-theme="dark"] .media-box {
+    /* background-color: #2a2d31 !important; */
+    color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .news-card h5,
+[data-bs-theme="dark"] .news-card p,
+[data-bs-theme="dark"] .news-title,
+[data-bs-theme="dark"] .news-meta,
+[data-bs-theme="dark"] .news-meta span {
+    color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+[data-bs-theme="dark"] .feedback-section {
+    background-color: transparent !important;
+}
+
+[data-bs-theme="dark"] .media-header {
+    background-color: #343a40 !important;
+    color: #fff;
+}
+
+[data-bs-theme="dark"] .media-content p {
+    color: #ccc !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+    color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .text-black {
+    color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: #b0b0b0 !important;
+}
+/* end body category show dark mode */
+
+
+/* start home page dark mode */
+    /* 🎨 تم دارک برای کل صفحه */
+    [data-bs-theme="dark"] .news-card,
+    [data-bs-theme="dark"] .media-box,
+    [data-bs-theme="dark"] .latest-news,
+    [data-bs-theme="dark"] .feedback-box,
+    [data-bs-theme="dark"] .carousel,
+    [data-bs-theme="dark"] .carousel-inner,
+    [data-bs-theme="dark"] .carousel-item,
+    [data-bs-theme="dark"] .media-header{
+        background-color: #2c2f34 !important;
+        color: #e0e0e0 !important;
+    }
+
+    [data-bs-theme="dark"] .bg-white,
+    [data-bs-theme="dark"] .bg-light {
+        background-color: #2c2f34 !important;
+        color: #e0e0e0 !important;
+    }
+
+    [data-bs-theme="dark"] .news-title,
+    [data-bs-theme="dark"] .text-black,
+    [data-bs-theme="dark"] .news-content p,
+    [data-bs-theme="dark"] .text-dark {
+        color: #ddd !important;
+    }
+
+    [data-bs-theme="dark"] .news-meta span,
+    [data-bs-theme="dark"] .news-author,
+    [data-bs-theme="dark"] .news-date {
+        color: #aaa !important;
+    }
+
+    [data-bs-theme="dark"] .media-header {
+        background-color: #1e1f21 !important;
+        border-bottom: 1px solid #444;
+    }
+
+    [data-bs-theme="dark"] .shadow,
+    [data-bs-theme="dark"] .shadow-sm,
+    [data-bs-theme="dark"] .shadow-lg {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+    }
+
+
+    /* ____ */
+
+
+    /* ____ */
+
+/* end home page dark mode */
+
+/* start sidebar dark mode */
+
+[data-bs-theme="dark"] .box-container .bg-white {
+  /* background-color: #2b2e32 !important; */
+  color: #f1f1f1 !important;
+  border-color: #3b3f45 !important;
+}
+
+[data-bs-theme="dark"] .box-container h3,
+[data-bs-theme="dark"] .box-container span,
+[data-bs-theme="dark"] .box-container li,
+[data-bs-theme="dark"] .box-container a {
+  color: #f1f1f1 !important;
+}
+
+[data-bs-theme="dark"] .box-container h3.border-danger {
+  border-color: #dc3545 !important;
+}
+
+[data-bs-theme="dark"] .list-group-item {
+  background-color: transparent !important;
+  border-color: #444 !important;
+  color: #e1e1e1 !important;
+}
+
+[data-bs-theme="dark"] .list-group-item .text-primary {
+  color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-primary-subtle {
+  background-color: #0d6efd1a !important; /* آبی روشن نیمه‌شفاف */
+  color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] .hover-blue:hover {
+  color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] #prayer-times-error {
+  color: #ff6b6b !important;
+}
+/* end sidebar dark mode */
+
+.games{
+  color: #010101 !important;
+}
+[data-bs-theme="dark"] .games{
+    background-color: #2b2e32 !important;
+  color: #e1e1e1 !important;
+}
+
+/* end dark mode page next project */
+
+
+/* start image editor */
+.attachment img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* end image editor */

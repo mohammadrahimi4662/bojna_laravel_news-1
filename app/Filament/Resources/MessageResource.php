@@ -31,6 +31,11 @@ class MessageResource extends Resource
 
     protected static ?string $navigationGroup = 'حرف مردم';
 
+    public static function getNavigationSort(): int
+    {
+        return 2;
+    }
+
     public static function form(Form $form): Form
     {
         return $form

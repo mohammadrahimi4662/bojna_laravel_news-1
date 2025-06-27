@@ -34,7 +34,10 @@ class SiteSettingResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationGroup = 'Site Settings';
+    protected static ?string $navigationGroup = 'تنظیمات سایت';
+    protected static ?string $modelLabel = 'تنظیمات سایت';         // عنوان مفرد
+    protected static ?string $pluralLabel = 'تنظیمات سایت';          // جمع
+    protected static ?string $navigationLabel = 'تنظیمات سایت';      // عنوان در سایدبار
 
 
     public static function form(Form $form): Form

@@ -18,6 +18,10 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
+use Filament\Navigation\NavigationItem;
+use Filament\Navigation\NavigationGroup;
+use App\Filament\Resources\NewsResource;
+
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -53,6 +57,30 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->navigationGroups([
+
+            NavigationGroup::make()
+                ->label('مدیریت محتوای خبر'),
+                // ->collapsed(true), // باز یا بسته بودن منو پیش‌فرض
+
+            NavigationGroup::make()
+                ->label('مدیریت محتوای تصاویر / ویدیو'),
+
+            NavigationGroup::make()
+                ->label('حرف مردم'),
+
+            NavigationGroup::make()
+                ->label('مدیریت محتوا'),
+
+            NavigationGroup::make()
+                ->label('تنظیمات سایت')
+                ->collapsed(true),
+
+            // NavigationGroup::make()
+            //     ->label('داشبورد') // خودش نمایش نمی‌ده ولی ترتیب تعیین می‌کنه
+            //     ->collapsed(false),
+
+        ]);
     }
 }

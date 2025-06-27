@@ -62,13 +62,35 @@ class DailyMediaResource extends Resource
             ->disabled(fn ($livewire) => $livewire instanceof EditRecord),
 
         TextInput::make('video_link')
-            ->label('لینک ویدیو (آپارات / یوتیوب)')
-            ->placeholder('https://www.aparat.com/v/abc123')
+            ->label('لینک ویدیو (فقط آپارات)')
+            ->placeholder('ckv6gqv')
             ->visible(fn (Forms\Get $get) => $get('media_type') === 'video')
             ->required(fn (Forms\Get $get) => $get('media_type') === 'video')
-            ->url()
-            ->rules(['starts_with:https://www.aparat.com,https://www.youtube.com,https://youtu.be'])
-            ->disabled(fn ($livewire) => $livewire instanceof EditRecord),
+            ->afterStateUpdated(function (Forms\Set $set, ?string $state) {
+                if ($state && str_contains($state, 'aparat.com')) {
+                    if (preg_match('/aparat\.com\/v\/([a-zA-Z0-9]+)/', $state, $matches)) {
+                        $set('media_path', $matches[1]);
+                    } else {
+                        $set('media_path', null);
+                    }
+                } else {
+                    $set('media_path', null);
+                }
+            })
+        //    ->rules(['starts_with:https://www.aparat.com/v/']) // ❌ حذف یا اصلاح این
+            ->rules(['regex:/[a-zA-Z0-9]+/']), // ✅ این می‌تونه جایگزین مناسب‌تری باشه
+
+        TextInput::make('media_path')
+            ->label('کد ویدیو')
+            ->hidden(),
+        // TextInput::make('video_link')
+        //     ->label('لینک ویدیو (آپارات / یوتیوب)')
+        //     ->placeholder('https://www.aparat.com/v/abc123')
+        //     ->visible(fn (Forms\Get $get) => $get('media_type') === 'video')
+        //     ->required(fn (Forms\Get $get) => $get('media_type') === 'video')
+        //     ->url()
+        //     ->rules(['starts_with:https://www.aparat.com,https://www.youtube.com,https://youtu.be'])
+        //     ->disabled(fn ($livewire) => $livewire instanceof EditRecord),
 
         Toggle::make('status')
             ->label('فعال')
@@ -79,6 +101,17 @@ class DailyMediaResource extends Resource
             ->default(Carbon::now()) // مقدار پیش‌فرض: زمان حال
             ->jalali(),
             ]);
+}
+
+public static function mutateFormDataBeforeSave(array $data): array
+{
+    if (!empty($data['video_link']) && preg_match('/aparat\.com\/v\/([a-zA-Z0-9]+)/', $data['video_link'], $matches)) {
+        $data['media_path'] = $matches[1];
+    } else {
+        $data['media_path'] = null;
+    }
+
+    return $data;
 }
 
     public static function table(Table $table): Table

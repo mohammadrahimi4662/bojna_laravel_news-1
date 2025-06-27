@@ -41,6 +41,10 @@ class NewsResource extends Resource
     protected static ?string $pluralLabel = 'اخبار';          // جمع
     protected static ?string $navigationLabel = 'اخبار';      // عنوان در سایدبار
 
+    public static function getNavigationSort(): int
+    {
+        return 1;
+    }
 
 public static function form(Form $form): Form
 {
@@ -145,7 +149,7 @@ public static function form(Form $form): Form
                     Select::make('position')
                     ->label('موقعیت قرارگیری خبر در سایت')
                     ->options([
-                        'slider_bottom' => 'پایین اسلایدر',
+                        'slider_bottom' => 'پیشنهاد سر دبیر',
                         'slider_side' => 'سمت چپ اسلایدر',
                         'slider' => 'اسلایدر',
                     ])
@@ -165,6 +169,7 @@ public static function form(Form $form): Form
 public static function table(Table $table): Table
 {
     return $table
+        ->defaultSort('created_at', 'desc')
         ->columns([
             ImageColumn::make('image')
                 ->label('تصویر شاخص')

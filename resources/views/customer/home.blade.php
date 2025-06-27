@@ -195,43 +195,38 @@
 </div>
 
 <section class="media-section mt-4">
-    @if($media_image && $media_image->media_type === 'image')
-    <div class="media-box">
-        <div class="media-header">تصویر</div>
-        <div class="media-content">
-            <img src="{{ asset('storage/' . $media_image->media_path) }}" alt="{{ $media_image->title }}">
-        </div>
-    </div>
-    @else
-    <div class="media-box">
-        <div class="media-header">تصویر</div>
-        <div class="media-content">
-            <p>تصویر شاخصی برای امروز یافت نشد</p>
-        </div>
-    </div>
-    @endif
 
-    @if($media_video && $media_video->media_type === 'video' && Str::startsWith($media_video->media_path, ['http://', 'https://']))
+    {{-- تصویر شاخص --}}
     <div class="media-box">
-        <div class="media-header">فیلم</div>
+        <div class="media-header">تصویر</div>
         <div class="media-content">
-            <iframe
-                src="{{ convertToEmbed($media_video->media_path) }}"
-                frameborder="0"
-                allowfullscreen
-                style="width: 100%; aspect-ratio: 16/9;">
-            </iframe>
+            @if($media_image && $media_image->media_type === 'image')
+                <img src="{{ asset('storage/' . $media_image->media_path) }}" alt="{{ $media_image->title }}">
+            @else
+                <p>تصویر شاخصی برای امروز یافت نشد</p>
+            @endif
         </div>
     </div>
-    @else
-    <div class="media-box">
+
+    {{-- ویدیو شاخص --}}
+    <div class="media-box mt-4">
         <div class="media-header">فیلم</div>
         <div class="media-content">
-            <p>فیلم شاخصی برای امروز یافت نشد</p>
+            @if($media_video && $media_video->media_type === 'video' && $media_video->media_path)
+                <iframe
+                    src="https://www.aparat.com/video/video/embed/videohash/{{ $media_video->media_path }}/vt/frame"
+                    frameborder="0"
+                    allowfullscreen
+                    style="width: 100%; aspect-ratio: 16/9;">
+                </iframe>
+            @else
+                <p>فیلم شاخصی برای امروز یافت نشد</p>
+            @endif
         </div>
     </div>
-    @endif
+
 </section>
+
 
 <style>
     [data-bs-theme="dark"] {

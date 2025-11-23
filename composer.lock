@@ -1053,7 +1053,11 @@
         },
         {
             "name": "filament/actions",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
@@ -1106,7 +1110,11 @@
         },
         {
             "name": "filament/filament",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
@@ -1171,6 +1179,7 @@
         },
         {
             "name": "filament/forms",
+<<<<<<< HEAD
             "version": "v3.3.37",
             "source": {
                 "type": "git",
@@ -1181,6 +1190,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filamentphp/forms/zipball/5cb8623735691d65b9a08c43be9b4431b017c51a",
                 "reference": "5cb8623735691d65b9a08c43be9b4431b017c51a",
+=======
+            "version": "v3.3.36",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filamentphp/forms.git",
+                "reference": "6d2eddf754f30dee8730535dfcbcefb4cd5e1136"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/6d2eddf754f30dee8730535dfcbcefb4cd5e1136",
+                "reference": "6d2eddf754f30dee8730535dfcbcefb4cd5e1136",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
                 "shasum": ""
             },
             "require": {
@@ -1223,11 +1244,19 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
+<<<<<<< HEAD
             "time": "2025-08-18T11:12:37+00:00"
         },
         {
             "name": "filament/infolists",
             "version": "v3.3.37",
+=======
+            "time": "2025-08-12T13:15:47+00:00"
+        },
+        {
+            "name": "filament/infolists",
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
@@ -1278,7 +1307,11 @@
         },
         {
             "name": "filament/notifications",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1330,7 +1363,11 @@
         },
         {
             "name": "filament/support",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1389,7 +1426,11 @@
         },
         {
             "name": "filament/tables",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
@@ -1441,7 +1482,11 @@
         },
         {
             "name": "filament/widgets",
+<<<<<<< HEAD
             "version": "v3.3.37",
+=======
+            "version": "v3.3.36",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
@@ -2092,6 +2137,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v12.25.0",
             "source": {
                 "type": "git",
@@ -2102,6 +2148,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/2ee2ba94ae60efd24c7a787cbb1a2f82f714bb20",
                 "reference": "2ee2ba94ae60efd24c7a787cbb1a2f82f714bb20",
+=======
+            "version": "v12.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "6dcf2c46da23d159f35d6246234953a74b740d83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6dcf2c46da23d159f35d6246234953a74b740d83",
+                "reference": "6dcf2c46da23d159f35d6246234953a74b740d83",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
                 "shasum": ""
             },
             "require": {
@@ -2305,7 +2363,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
             "time": "2025-08-18T22:20:52+00:00"
+=======
+            "time": "2025-08-13T20:30:36+00:00"
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
         },
         {
             "name": "laravel/prompts",
@@ -6881,6 +6943,158 @@
             "time": "2025-06-23T16:12:55+00:00"
         },
         {
+            "name": "symfony/polyfill-php84",
+            "version": "v1.32.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php84.git",
+                "reference": "000df7860439609837bbe28670b0be15783b7fbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php84/zipball/000df7860439609837bbe28670b0be15783b7fbf",
+                "reference": "000df7860439609837bbe28670b0be15783b7fbf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php84\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.4+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php84/tree/v1.32.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-02-20T12:04:08+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php85",
+            "version": "v1.32.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php85.git",
+                "reference": "6fedf31ce4e3648f4ff5ca58bfd53127d38f05fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php85/zipball/6fedf31ce4e3648f4ff5ca58bfd53127d38f05fd",
+                "reference": "6fedf31ce4e3648f4ff5ca58bfd53127d38f05fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php85\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.5+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php85/tree/v1.32.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-05-02T08:40:52+00:00"
+        },
+        {
             "name": "symfony/polyfill-uuid",
             "version": "v1.33.0",
             "source": {
@@ -9049,6 +9263,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "11.5.34",
             "source": {
                 "type": "git",
@@ -9059,6 +9274,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3e4c6ef395f7cb61a6206c23e0e04b31724174f2",
                 "reference": "3e4c6ef395f7cb61a6206c23e0e04b31724174f2",
+=======
+            "version": "11.5.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "5965e9ff57546cb9137c0ff6aa78cb7442b05cf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5965e9ff57546cb9137c0ff6aa78cb7442b05cf6",
+                "reference": "5965e9ff57546cb9137c0ff6aa78cb7442b05cf6",
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
                 "shasum": ""
             },
             "require": {
@@ -9130,7 +9357,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.34"
+=======
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.33"
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
             },
             "funding": [
                 {
@@ -9154,7 +9385,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-08-20T14:41:45+00:00"
+=======
+            "time": "2025-08-16T05:19:02+00:00"
+>>>>>>> 1efe82f2dfff73c35b1e4f3e18cf06dc108d46eb
         },
         {
             "name": "sebastian/cli-parser",
@@ -10311,12 +10546,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
